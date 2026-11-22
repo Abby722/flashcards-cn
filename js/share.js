@@ -62,8 +62,10 @@
     return { id: deck.id, updated: !!existing };
   };
   Sh.importCode = function (code) {
+    // Some apps (e.g. WhatsApp on iPhone) percent-encode characters of the link, such as + → %2B.
+    try { code = decodeURIComponent(code); } catch {}
     const json = LZString.decompressFromEncodedURIComponent(code);
-    if (!json) throw new Error('This link is incomplete. Ask for the link again.');
+    if (!json) throw new Error(`This link is incomplete (${code.length} characters arrived). Ask for the link again, or for the deck file.`);
     return Sh.importDeck(JSON.parse(json));
   };
   Sh.importFile = async function (file) {
