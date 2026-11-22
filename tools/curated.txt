@@ -1,0 +1,290 @@
+# word|pos|english|german|emoji   (pos: pronoun noun verb adj adv measure number time particle prep conj phrase)
+我|pronoun|I, me|ich, mich|🙋
+你|pronoun|you|du, dich|👉
+您|pronoun|you (polite)|Sie|🙇
+他|pronoun|he, him|er, ihn|👦
+她|pronoun|she, her|sie|👧
+它|pronoun|it|es|🐾
+我们|pronoun|we, us|wir, uns|👨‍👩‍👧
+你们|pronoun|you (all)|ihr, euch|👥
+他们|pronoun|they, them|sie (Pl.)|👥
+她们|pronoun|they (female)|sie (Pl., weibl.)|👭
+这|pronoun|this|dies, das hier|👇
+那|pronoun|that|das dort|👉
+这儿|pronoun|here|hier|📍
+那儿|pronoun|there|dort|🗺️
+这个|pronoun|this one|dieses|👇
+那个|pronoun|that one|jenes|👉
+谁|pronoun|who|wer|❓
+什么|pronoun|what|was|❓
+哪|pronoun|which|welche(r)|❓
+哪儿|pronoun|where|wo|❓
+怎么|pronoun|how|wie|❓
+多少|pronoun|how many|wie viel|🔢
+大家|pronoun|everyone|alle|👨‍👩‍👧‍👦
+自己|pronoun|oneself|selbst|🪞
+猫|noun|cat|Katze|🐱
+狗|noun|dog|Hund|🐶
+鱼|noun|fish|Fisch|🐟
+鸟|noun|bird|Vogel|🐦
+马|noun|horse|Pferd|🐴
+牛|noun|cow|Kuh|🐮
+羊|noun|sheep|Schaf|🐑
+猪|noun|pig|Schwein|🐷
+鸡|noun|chicken|Huhn|🐔
+兔子|noun|rabbit|Hase|🐰
+熊猫|noun|panda|Panda|🐼
+老虎|noun|tiger|Tiger|🐯
+猴子|noun|monkey|Affe|🐵
+大象|noun|elephant|Elefant|🐘
+老鼠|noun|mouse|Maus|🐭
+龙|noun|dragon|Drache|🐉
+人|noun|person|Mensch|🧑
+妈妈|noun|mum|Mama|👩
+爸爸|noun|dad|Papa|👨
+哥哥|noun|older brother|älterer Bruder|👦
+姐姐|noun|older sister|ältere Schwester|👧
+弟弟|noun|younger brother|jüngerer Bruder|👦
+妹妹|noun|younger sister|jüngere Schwester|👧
+爷爷|noun|grandpa (father's side)|Opa (väterlicherseits)|👴
+奶奶|noun|grandma (father's side)|Oma (väterlicherseits)|👵
+外公|noun|grandpa (mother's side)|Opa (mütterlicherseits)|👴
+外婆|noun|grandma (mother's side)|Oma (mütterlicherseits)|👵
+孩子|noun|child|Kind|🧒
+儿子|noun|son|Sohn|👦
+女儿|noun|daughter|Tochter|👧
+朋友|noun|friend|Freund(in)|🤝
+老师|noun|teacher|Lehrer(in)|🧑‍🏫
+学生|noun|student|Schüler(in)|🧑‍🎓
+医生|noun|doctor|Arzt, Ärztin|🧑‍⚕️
+家|noun|home, family|Zuhause, Familie|🏠
+学校|noun|school|Schule|🏫
+中国|noun|China|China|🇨🇳
+瑞士|noun|Switzerland|Schweiz|🇨🇭
+德国|noun|Germany|Deutschland|🇩🇪
+中文|noun|Chinese (language)|Chinesisch|🀄
+汉语|noun|Chinese (language)|Chinesisch|🀄
+英语|noun|English (language)|Englisch|🇬🇧
+德语|noun|German (language)|Deutsch|🇩🇪
+名字|noun|name|Name|📛
+书|noun|book|Buch|📖
+笔|noun|pen|Stift|✏️
+桌子|noun|table|Tisch|🪑
+椅子|noun|chair|Stuhl|🪑
+电脑|noun|computer|Computer|💻
+手机|noun|mobile phone|Handy|📱
+电视|noun|television|Fernseher|📺
+车|noun|car|Auto|🚗
+汽车|noun|car|Auto|🚗
+飞机|noun|aeroplane|Flugzeug|✈️
+火车|noun|train|Zug|🚆
+自行车|noun|bicycle|Fahrrad|🚲
+水|noun|water|Wasser|💧
+茶|noun|tea|Tee|🍵
+咖啡|noun|coffee|Kaffee|☕
+牛奶|noun|milk|Milch|🥛
+米饭|noun|rice (cooked)|Reis|🍚
+饭|noun|meal, rice|Essen, Reis|🍚
+面条|noun|noodles|Nudeln|🍜
+包子|noun|steamed bun|gefülltes Dampfbrötchen|🥟
+饺子|noun|dumplings|Teigtaschen|🥟
+面包|noun|bread|Brot|🍞
+蛋糕|noun|cake|Kuchen|🍰
+苹果|noun|apple|Apfel|🍎
+香蕉|noun|banana|Banane|🍌
+西瓜|noun|watermelon|Wassermelone|🍉
+橙子|noun|orange|Orange|🍊
+草莓|noun|strawberry|Erdbeere|🍓
+葡萄|noun|grapes|Trauben|🍇
+水果|noun|fruit|Obst|🍎
+菜|noun|vegetables, dish|Gemüse, Gericht|🥬
+鸡蛋|noun|egg|Ei|🥚
+冰淇淋|noun|ice cream|Eis|🍦
+糖|noun|sugar, sweets|Zucker, Süßigkeit|🍬
+衣服|noun|clothes|Kleidung|👕
+鞋|noun|shoes|Schuhe|👟
+帽子|noun|hat|Hut, Mütze|🧢
+房子|noun|house|Haus|🏠
+门|noun|door|Tür|🚪
+花|noun|flower|Blume|🌸
+树|noun|tree|Baum|🌳
+山|noun|mountain|Berg|⛰️
+河|noun|river|Fluss|🏞️
+海|noun|sea|Meer|🌊
+天|noun|sky, day|Himmel, Tag|🌤️
+太阳|noun|sun|Sonne|☀️
+月亮|noun|moon|Mond|🌙
+星星|noun|star|Stern|⭐
+雨|noun|rain|Regen|🌧️
+雪|noun|snow|Schnee|❄️
+天气|noun|weather|Wetter|🌦️
+眼睛|noun|eye|Auge|👀
+耳朵|noun|ear|Ohr|👂
+鼻子|noun|nose|Nase|👃
+嘴|noun|mouth|Mund|👄
+手|noun|hand|Hand|✋
+脚|noun|foot|Fuß|🦶
+头|noun|head|Kopf|🗣️
+钱|noun|money|Geld|💰
+球|noun|ball|Ball|⚽
+足球|noun|football|Fussball|⚽
+音乐|noun|music|Musik|🎵
+生日|noun|birthday|Geburtstag|🎂
+商店|noun|shop|Laden|🏪
+医院|noun|hospital|Spital, Krankenhaus|🏥
+公园|noun|park|Park|🌳
+厕所|noun|toilet|Toilette|🚻
+颜色|noun|colour|Farbe|🎨
+是|verb|to be|sein|🟰
+有|verb|to have; there is|haben; es gibt|🤲
+没有|verb|not have; there isn't|nicht haben; es gibt nicht|🚫
+在|verb|to be at|sein (an einem Ort)|📍
+喜欢|verb|to like|mögen|❤️
+爱|verb|to love|lieben|💕
+吃|verb|to eat|essen|🍽️
+喝|verb|to drink|trinken|🥤
+看|verb|to look, watch, read|schauen, lesen|👀
+听|verb|to listen|hören|👂
+说|verb|to speak, say|sprechen, sagen|💬
+读|verb|to read aloud|(laut) lesen|📖
+写|verb|to write|schreiben|✍️
+学|verb|to learn|lernen|📚
+学习|verb|to study|lernen|📚
+去|verb|to go|gehen|🚶
+来|verb|to come|kommen|👋
+回|verb|to return|zurückkehren|↩️
+走|verb|to walk|gehen, laufen|🚶
+跑|verb|to run|rennen|🏃
+坐|verb|to sit|sitzen|🪑
+睡觉|verb|to sleep|schlafen|😴
+起床|verb|to get up|aufstehen|⏰
+玩|verb|to play|spielen|🎲
+做|verb|to do, make|machen|🛠️
+买|verb|to buy|kaufen|🛒
+卖|verb|to sell|verkaufen|🏷️
+开|verb|to open; to drive|öffnen; fahren|🔓
+关|verb|to close|schliessen|🔒
+叫|verb|to be called; to call|heissen; rufen|📛
+想|verb|to want; to think|wollen; denken|💭
+要|verb|to want|wollen|🙏
+会|verb|can (know how to)|können|💡
+能|verb|can (be able to)|können|💪
+认识|verb|to know (someone)|kennen|🤝
+知道|verb|to know|wissen|💡
+住|verb|to live (somewhere)|wohnen|🏠
+工作|verb|to work|arbeiten|💼
+打电话|verb|to make a phone call|telefonieren|📞
+唱歌|verb|to sing|singen|🎤
+跳舞|verb|to dance|tanzen|💃
+游泳|verb|to swim|schwimmen|🏊
+画|verb|to draw|malen|🎨
+给|verb|to give|geben|🎁
+等|verb|to wait|warten|⏳
+帮|verb|to help|helfen|🤝
+笑|verb|to laugh, smile|lachen|😄
+哭|verb|to cry|weinen|😢
+谢谢|phrase|thank you|danke|🙏
+你好|phrase|hello|hallo|👋
+再见|phrase|goodbye|tschüss|👋
+对不起|phrase|sorry|Entschuldigung|🙇
+没关系|phrase|it doesn't matter|macht nichts|👌
+不客气|phrase|you're welcome|bitte, gern geschehen|😊
+早上好|phrase|good morning|guten Morgen|🌅
+晚安|phrase|good night|gute Nacht|🌙
+好|adj|good|gut|👍
+大|adj|big|gross|🐘
+小|adj|small|klein|🐭
+多|adj|many, much|viel|➕
+少|adj|few, little|wenig|➖
+高|adj|tall, high|gross, hoch|🦒
+矮|adj|short (height)|klein (Körpergrösse)|🐧
+长|adj|long|lang|📏
+短|adj|short|kurz|✂️
+热|adj|hot|heiss|🔥
+冷|adj|cold|kalt|🥶
+新|adj|new|neu|✨
+旧|adj|old (things)|alt (Dinge)|🏚️
+老|adj|old (people)|alt (Personen)|👴
+漂亮|adj|pretty|hübsch|🌸
+可爱|adj|cute|süss, niedlich|🥰
+快|adj|fast|schnell|⚡
+慢|adj|slow|langsam|🐢
+开心|adj|happy|fröhlich|😄
+高兴|adj|glad, happy|froh|😊
+累|adj|tired|müde|😩
+饿|adj|hungry|hungrig|😋
+渴|adj|thirsty|durstig|🥤
+忙|adj|busy|beschäftigt|🏃
+好吃|adj|tasty|lecker|😋
+红|adj|red|rot|🔴
+黄|adj|yellow|gelb|🟡
+蓝|adj|blue|blau|🔵
+绿|adj|green|grün|🟢
+白|adj|white|weiss|⚪
+黑|adj|black|schwarz|⚫
+对|adj|right, correct|richtig|✅
+错|adj|wrong|falsch|❌
+不|adv|not, no|nicht, nein|🚫
+没|adv|not (past), haven't|nicht (Vergangenheit)|🚫
+很|adv|very|sehr|💯
+太|adv|too (much)|zu (sehr)|‼️
+也|adv|also, too|auch|➕
+都|adv|all, both|alle|🙌
+还|adv|still, also|noch|🔁
+再|adv|again|wieder|🔁
+真|adv|really|wirklich|😮
+一起|adv|together|zusammen|🤝
+个|measure|(general measure word)|(allg. Zählwort)|🔹
+只|measure|(for animals)|(Zählwort für Tiere)|🐾
+本|measure|(for books)|(Zählwort für Bücher)|📚
+杯|measure|cup of|Tasse, Glas|🥤
+口|measure|(for family members)|(Zählwort für Familienmitglieder)|👨‍👩‍👧
+块|measure|piece; yuan|Stück; Yuan|🧱
+岁|measure|years old|Jahre alt|🎂
+件|measure|(for clothes, matters)|(Zählwort für Kleidung)|👕
+张|measure|(for flat things)|(Zählwort für Flaches)|📄
+条|measure|(for long thin things)|(Zählwort für Langes)|〰️
+一|number|one|eins|1️⃣
+二|number|two|zwei|2️⃣
+两|number|two (of something)|zwei (Stück)|2️⃣
+三|number|three|drei|3️⃣
+四|number|four|vier|4️⃣
+五|number|five|fünf|5️⃣
+六|number|six|sechs|6️⃣
+七|number|seven|sieben|7️⃣
+八|number|eight|acht|8️⃣
+九|number|nine|neun|9️⃣
+十|number|ten|zehn|🔟
+百|number|hundred|hundert|💯
+零|number|zero|null|0️⃣
+几|number|how many; a few|wie viele; einige|🔢
+今天|time|today|heute|📅
+明天|time|tomorrow|morgen|➡️
+昨天|time|yesterday|gestern|⬅️
+现在|time|now|jetzt|⏱️
+早上|time|morning|Morgen|🌅
+上午|time|morning (a.m.)|Vormittag|🌤️
+中午|time|noon|Mittag|🕛
+下午|time|afternoon|Nachmittag|🌇
+晚上|time|evening|Abend|🌙
+年|time|year|Jahr|📆
+月|time|month|Monat|🗓️
+星期|time|week|Woche|🗓️
+周末|time|weekend|Wochenende|🎉
+点|time|o'clock|Uhr|🕒
+吗|particle|(yes/no question)|(Fragepartikel)|❓
+呢|particle|(and you? / question)|(und du? / Fragepartikel)|❔
+吧|particle|(suggestion: let's…)|(Vorschlag: lass uns…)|💡
+了|particle|(completed / change)|(abgeschlossen / Veränderung)|✔️|le
+的|particle|(possessive: 's)|(Besitz: von)|🔗
+们|particle|(plural suffix)|(Pluralsuffix)|👥
+和|conj|and|und|➕
+但是|conj|but|aber|↔️
+因为|conj|because|weil|💭
+所以|conj|so, therefore|deshalb|➡️
+还是|conj|or (in questions)|oder (in Fragen)|❓
+或者|conj|or|oder|❓
+跟|prep|with|mit|🤝
+从|prep|from|von|⬅️
+对|prep|to, towards|zu, gegenüber|👉
+给|prep|for, to|für|🎁

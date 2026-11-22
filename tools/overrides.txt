@@ -1,0 +1,181 @@
+# word|pos|english|german|emoji  — blank field = keep generated value. Fixes for HSK 1 entries.
+班|noun|class (at school)|Klasse|
+半天|time|half a day; quite a while|ein halber Tag; lange|
+包|noun|bag; to wrap|Tasche; einpacken|👜
+本子|noun|notebook|Heft|📓
+比|prep|than (comparing)|als (beim Vergleich)|⚖️
+别|adv|don't|nicht (Verbot)|🙅
+别人||||
+不大||not very|nicht sehr|
+差|adj|poor; bad|schlecht; mangelhaft|
+常|adv|often|oft|
+出|verb|to go out; to come out|hinausgehen; herauskommen|🚪
+出来||to come out|herauskommen|
+次|measure|time(s) (how often)|Mal|🔁
+打||to hit; to play (ball games)|schlagen; spielen|
+打开||to open|öffnen|📂
+大学生||university student|Student(in)|🧑‍🎓
+地|particle|(adverb marker: -ly)|(Adverb-Partikel: -lich)|
+地方||place|Ort|📍
+地上||on the ground|auf dem Boden|
+第|number|(ordinal: No. …)|(Ordnungszahl: …te)|
+电|noun|electricity|Strom, Elektrizität|⚡
+电话|||Telefon; Anruf|📞
+电影||film, movie|Film|🎬
+东|noun|east|Osten|🧭
+东西|noun|thing, stuff|Ding, Sache|📦
+动|verb|to move|sich bewegen|
+读书||to read; to study|lesen; lernen|📖
+放|verb|to put, to place|legen, stellen|
+分|measure|minute; cent|Minute; Rappen/Fen|
+风|noun|wind|Wind|🌬️
+干|verb|to do|machen, tun|
+干什么|phrase|what are you doing?|was machst du?|
+告诉|verb|to tell|erzählen, sagen|🗣️
+国|noun|country|Land|🌍
+过|particle|(have done before)|(Erfahrung: schon einmal)|
+还有|conj|and also; there is still|ausserdem; es gibt noch|
+号|noun|number; date (day of month)|Nummer; Datum|🔢
+后|noun|back; after|hinten; nach|
+后边||the back; behind|hinten|
+话|noun|words; speech|Worte, Rede|💬
+坏|||schlecht; kaputt|
+教|verb|to teach|unterrichten, lehren|🧑‍🏫
+就|adv|then; right away|dann; gleich|
+开车||to drive a car|Auto fahren|🚗
+考|verb|to test; to take an exam|prüfen|📝
+考试|noun|exam|Prüfung|📝
+课|noun|lesson, class|Unterricht, Lektion|📚
+里|noun|inside|innen, drinnen|
+里边||inside|drinnen|
+楼|noun|building; floor|Gebäude; Stockwerk|🏢
+楼下|||unten (im Haus)|
+路|noun|road, way|Weg, Strasse|🛣️
+路口||crossing|Kreuzung|🚦
+毛|noun|hair, fur; 10 cents|Fell, Haar; 10 Fen|
+没什么|phrase|it's nothing|nichts; macht nichts|
+没事儿|phrase|it's OK; nothing's wrong|kein Problem|👌
+拿|verb|to take, to hold|nehmen, halten|✋
+奶|noun|milk|Milch|🥛
+男|adj|male|männlich|👨
+男孩儿|||Junge|👦
+男生|||Junge; Schüler|👦
+南|noun|south|Süden|🧭
+难|adj|difficult|schwierig|😣
+女|adj|female|weiblich|👩
+女孩儿|||Mädchen|👧
+女生|||Mädchen; Schülerin|👧
+票|noun|ticket|Ticket, Karte|🎫
+起|verb|to rise; to get up|aufstehen|
+起来|verb|to get up; to stand up|aufstehen|
+前边||the front; in front|vorne|
+请|verb|please; to invite|bitte; einladen|🙏
+请问|phrase|excuse me, may I ask…|Darf ich fragen…?|🙋
+日|noun|sun; day|Sonne; Tag|☀️
+上|noun|up; on; above; last|oben; auf; letzte|⬆️
+上次|||letztes Mal|
+上课|||Unterricht haben|🏫
+事|noun|matter, thing|Sache, Angelegenheit|
+是不是|phrase|is it or not?|oder? stimmt das?|
+送|verb|to give (as a gift); to see off|schenken; begleiten|🎁
+外|noun|outside|aussen, draussen|
+外国|noun|foreign country|Ausland|🌍
+网上|noun|online|im Internet|🌐
+网友|||Online-Freund(in)|
+忘记|||vergessen|
+洗|verb|to wash|waschen|🧼
+下|noun|down; under; next|unten; unter; nächste|⬇️
+下边||below; under|unten|
+下次|||nächstes Mal|
+下雨|||es regnet|🌧️
+先|adv|first|zuerst|
+先生|noun|Mr.; sir; husband|Herr|🤵
+小朋友|||Kind, Kinder|🧒
+小学生|||Grundschüler(in)|🎒
+行|adj|OK, alright|in Ordnung, okay|👌
+一边|adv|while (doing two things)|gleichzeitig|
+一块儿|adv|together|zusammen|
+一下儿|measure|a bit; once (softens a verb)|mal kurz|
+一会儿|time|a moment|einen Moment|⏳
+一样|adj|the same|gleich|
+有些|pronoun|some|einige|
+有一些|pronoun|some|einige|
+元|measure|yuan (money)|Yuan|💴
+早|adj|early|früh|🌅
+站|verb|to stand|stehen|🧍
+找到|||finden|🔍
+这边|||hier, auf dieser Seite|
+正|adv|just (now); right|gerade|
+中|noun|middle; in|Mitte; in|
+字|noun|character, word|Schriftzeichen|🀄
+子|particle|(noun suffix)|(Nomen-Suffix)|
+最后|||zum Schluss|
+左|noun|left|links|⬅️
+右|noun|right|rechts|➡️
+坐下|||sich hinsetzen|🪑
+北|noun|north|Norden|🧭
+西|noun|west|Westen|🧭
+北京|||Peking|🏯
+病|||Krankheit|🤒
+床|||Bett|🛏️
+车票|||Fahrkarte|🎫
+车站|||Bahnhof; Haltestelle|🚉
+吃饭|||essen|🍚
+穿|||anziehen; tragen|👕
+大学|||Universität|🎓
+地图|||Landkarte|🗺️
+饭店|||Restaurant; Hotel|🍽️
+房间|||Zimmer|🛏️
+飞|||fliegen|🕊️
+干净|||sauber|🧽
+哥|||älterer Bruder|👦
+歌|||Lied|🎵
+贵|||teuer|💸
+汉字|||chinesisches Schriftzeichen|🀄
+好看|||schön, hübsch|😍
+好玩儿|||lustig, macht Spass|🎉
+回家|||nach Hause gehen|🏠
+机场|||Flughafen|🛫
+机票|||Flugticket|🎫
+见面|||sich treffen|🤝
+姐|||ältere Schwester|👧
+今年|||dieses Jahr|📆
+看见|||sehen|👀
+课本|||Lehrbuch|📘
+老人|||alte Menschen|🧓
+马路|||Strasse|🛣️
+马上|||sofort, gleich|⚡
+妈|||Mama|👩
+爸|||Papa|👨
+妹|||jüngere Schwester|👧
+弟|||jüngerer Bruder|👦
+门口|||Eingang|🚪
+面条儿|||Nudeln|🍜
+钱包|||Portemonnaie|👛
+肉|||Fleisch|🍖
+商场|||Einkaufszentrum|🛍️
+身体|||Körper; Gesundheit|💪
+生病|||krank werden|🤒
+生气|||wütend|😠
+时间|||Zeit|⏰
+书包|||Schultasche|🎒
+书店|||Buchhandlung|📚
+睡|||schlafen|😴
+图书馆|||Bibliothek|🏛️
+晚饭|||Abendessen|🍽️
+午饭|||Mittagessen|🍱
+早饭|||Frühstück|🥣
+洗手间|||Toilette|🚻
+小孩儿|||Kind|🧒
+小时|||Stunde|⏱️
+小学|||Primarschule|🏫
+新年|||Neujahr|🎆
+星期日|||Sonntag|📅
+星期天|||Sonntag|📅
+休息|||sich ausruhen|🛋️
+重|||schwer|🏋️
+走路|||zu Fuss gehen|🚶
+同学|||Mitschüler(in)|🧑‍🤝‍🧑
+电视机|||Fernseher|📺
+电影院|||Kino|🎦
+杯子|||Becher, Glas|🥤

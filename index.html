@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>字卡 Zìkǎ · Chinese flashcards</title>
+<meta name="description" content="Flashcards, sentence building and quizzes for a Chinese class.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23C23B22'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='serif'%3E字%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/" aria-label="All decks">
+    <span class="brand-seal" aria-hidden="true">字</span>
+    <span class="brand-name">Zìkǎ</span>
+  </a>
+  <nav class="modes" id="modes" aria-label="Deck modes"></nav>
+  <div class="seg py-switch" id="py-switch" role="group" aria-label="Pinyin">
+    <span class="py-switch-label hz" aria-hidden="true">拼音</span>
+    <button type="button" data-py="show" title="Always show pinyin">Show</button>
+    <button type="button" data-py="tap" title="Pinyin hidden until tapped">Tap</button>
+    <button type="button" data-py="hide" title="Hide pinyin">Hide</button>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="btn-fullscreen" title="Full screen (for the projector)" aria-label="Full screen">⛶</button>
+    <button class="icon-btn" id="btn-settings" title="Settings" aria-label="Settings">⚙</button>
+  </div>
+</header>
+<main id="view" tabindex="-1"></main>
+
+<dialog id="settings-dialog" class="sheet">
+  <form method="dialog" class="sheet-body" id="settings-form">
+    <h2>Settings</h2>
+    <fieldset>
+      <legend>Translations on the card</legend>
+      <label class="radio"><input type="radio" name="trans" value="both"> English and German</label>
+      <label class="radio"><input type="radio" name="trans" value="en"> English only</label>
+      <label class="radio"><input type="radio" name="trans" value="de"> German only</label>
+    </fieldset>
+    <label class="field">Chinese voice
+      <select name="voice" id="voice-select"></select>
+    </label>
+    <label class="field">Speaking speed <span id="rate-out"></span>
+      <input type="range" name="rate" min="0.5" max="1.2" step="0.05">
+    </label>
+    <label class="check"><input type="checkbox" name="autoSpeak"> Say the word when a card flips</label>
+    <div class="row"><button class="btn small" type="button" id="btn-test-sound">🔊 Test sound</button><span class="muted" id="voice-status"></span></div>
+    <label class="check"><input type="checkbox" name="kai"> Use handwriting-style characters (楷体) when available</label>
+    <div class="row"><button class="btn small" type="button" id="btn-colours">🎨 Edit colours and positions</button></div>
+    <div class="sheet-actions">
+      <button class="btn" value="close">Done</button>
+    </div>
+    <p class="fineprint">Dictionary data: CC-CEDICT (CC BY-SA 4.0), HanDeDict (CC BY-SA 2.0), complete-hsk-vocabulary (MIT). Emoji keywords: emojilib (MIT).</p>
+  </form>
+</dialog>
+
+<dialog id="modal" class="sheet"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/vendor/lz-string.min.js"></script>
+<script src="js/vendor/hanzi-writer.min.js"></script>
+<script src="js/pos.js"></script>
+<script src="js/slots.js"></script>
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="js/media.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/lex.js"></script>
+<script src="js/characters.js"></script>
+<script src="js/share.js"></script>
+<script src="js/strokes.js"></script>
+<script src="decks/sample.js"></script>
+<script src="js/components.js"></script>
+<script src="js/views/home.js"></script>
+<script src="js/views/editor.js"></script>
+<script src="js/views/cards.js"></script>
+<script src="js/views/builder.js"></script>
+<script src="js/views/quiz.js"></script>
+<script src="js/views/talk.js"></script>
+<script src="js/views/talk-editor.js"></script>
+<script src="js/views/net.js"></script>
+<script src="js/views/chars.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "zika-tools",
+  "private": true,
+  "description": "Builds the dictionary data files for the Zìkǎ flashcards app",
+  "scripts": { "build": "node build-lex.js" },
+  "dependencies": {
+    "cc-cedict": "^1.1.1",
+    "emojilib": "^4.0.3",
+    "pinyin-pro": "^3.29.5",
+    "unicode-emoji-json": "^0.9.0"
+  }
+}
