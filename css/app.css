@@ -223,6 +223,11 @@ body.py-tap .tile .pyx:not(.rev) { background: rgba(255,255,255,.55); }
   .flip-inner { transition: none; }
 }
 .flip.flipped .face.front, .flip:not(.flipped) .face.back { pointer-events: none; }
+/* Safari (iPhone) lets the 田字格 characters show through backface-visibility, mirrored.
+   Hide the face that is turned away, switching when the card is edge-on (≈0.09s into the eased turn). */
+.face { transition: visibility 0s .09s; }
+.flip.flipped .face.front, .flip:not(.flipped) .face.back { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .face { transition: none; } }
 
 /* word wall */
 .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
