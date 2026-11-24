@@ -33,6 +33,12 @@ It is a static web page: no server, no accounts, no build step. Everything a stu
    English and German after `|` are optional. Record any line yourself with 🎙, or press **🎙 Recording session** to record a character's lines one after another: space starts, space stops and moves on, ← redoes the previous line.
 4. In class: use **⛶** for full screen on the projector, *Word wall* to introduce, *Cards* to drill, *Network* to build word families together, *Talk*, *Sentences* and *Quiz*.
 5. **Share with the family** (Edit page):
+   - **Class link** (best, with your recordings): on the Edit page press *Download deck file*, then publish it with the app:
+     ```
+     node tools/publish-deck.js ~/Downloads/Christmas-holidays.zika.json
+     git add class && git commit -m "Publish Christmas holidays" && git push
+     ```
+     The family gets a short link like `https://<your-user>.github.io/flashcards-cn/#/class/christmas-holidays` (also shown on the Edit page's share sheet). It brings the deck with recordings and photos, and every time they open the app it fetches your newest published version; their review progress is kept. To update, download the deck file again and publish it again. **Published decks, recordings included, are public.** Remove one with `node tools/publish-deck.js --remove <name>`.
    - **Link**: opening it adds the deck on their phone/tablet, with its dialogues, characters and your colours. Send it again after a lesson and the deck updates (their review progress is kept). Links don't carry recordings, uploaded pictures or network boards.
    - **Deck file**: includes everything: recordings, photos, your own characters' pictures and the network boards. They open it with *Open a deck file* on the home page.
 

@@ -20,6 +20,15 @@
       } catch (e) { view.append(h('div.empty', h('p', e.message), h('a.btn', { href: '#/' }, 'Go to your decks'))); }
       return;
     }
+    if (parts[0] === 'class' && parts[1]) {
+      view.append(h('div.empty', h('p', 'Getting the deck with its recordings…')));
+      try {
+        const r = await App.share.importClass(decodeURIComponent(parts[1]));
+        U.toast(r.updated ? 'Deck updated.' : 'Deck added. Have fun practising!');
+        location.replace(`#/deck/${r.id}/cards`);
+      } catch (e) { view.replaceChildren(h('div.empty', h('p', e.message), h('a.btn', { href: '#/' }, 'Go to your decks'))); }
+      return;
+    }
     if (parts[0] === 'chars') { document.title = '字表 Characters · 字卡 Zìkǎ'; App.views.chars(view, params); return; }
     if (parts[0] === 'deck') {
       const deck = App.store.deck(parts[1]);
@@ -131,4 +140,6 @@
   App.store.ensureSample();
   window.addEventListener('hashchange', route);
   route();
+  // class decks: fetch newer versions the teacher published; redraw only the home page
+  App.share.refreshClassDecks().then(changed => { if (changed && !/^#\/(deck|class|import)\//.test(location.hash)) route(); });
 })();

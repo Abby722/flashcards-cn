@@ -227,8 +227,24 @@
       const link = App.share.link(deck);
       const linkInput = h('input', { type: 'text', value: link, readOnly: true, onfocus: e => e.target.select() });
       const lost = App.share.linkHasLostMedia(deck);
+      const classBox = h('div');
+      App.share.classIndex().then(index => {
+        const e = index.find(x => x.id === deck.id);
+        if (!e) return;
+        const url = App.share.classLink(e.slug);
+        const stale = !deck.source && (deck.updated || 0) > e.published + 60e3;
+        classBox.append(h('div.share-box',
+          h('strong', 'Class link (with your recordings)'),
+          h('p.muted', 'This deck is published with the app. The link is short, carries your recordings and photos, and families get your newest version whenever they open the app.'),
+          stale ? h('p', { style: { color: 'var(--seal)' } }, 'You changed this deck after publishing it. To update the families, download the deck file below and publish it again.') : null,
+          h('input', { type: 'text', value: url, readOnly: true, onfocus: ev => ev.target.select() }),
+          h('div.row',
+            h('button.btn.primary', { onclick: async () => { try { await navigator.clipboard.writeText(url); U.toast('Link copied.'); } catch { U.toast('Press Ctrl+C / ⌘C to copy.'); } } }, 'Copy link'),
+            navigator.share ? h('button.btn', { onclick: () => navigator.share({ title: deck.name, url }).catch(() => {}) }, 'Send…') : null)));
+      });
       return [
         h('h2', 'Share with the family'),
+        classBox,
         h('div.share-box',
           h('strong', 'Option 1: a link'),
           location.protocol === 'file:' ? h('p', { style: { color: 'var(--seal)' } }, 'This copy of the app is opened from a file on your computer, so the link will not work on other devices. Put the app online first (see the README: GitHub Pages), then share from there.') : null,

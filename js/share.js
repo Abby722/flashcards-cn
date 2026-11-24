@@ -55,6 +55,7 @@
         if (od) for (const l of d.lines) { const ol = od.lines.find(o => o.id === l.id); if (ol && !l.audio && ol.audio) l.audio = ol.audio; }
       }
       if (!(deck.boards || []).length && (existing.boards || []).length) deck.boards = existing.boards;
+      if (!deck.source && existing.source) deck.source = existing.source; // stay a class deck
     }
     for (const [id, dataUrl] of Object.entries(media)) await App.media.put(await App.media.fromDataURL(dataUrl), id);
     if (Array.isArray(chars)) App.chars.merge(chars);
@@ -68,6 +69,41 @@
     if (!json) throw new Error(`This link is incomplete (${code.length} characters arrived). Ask for the link again, or for the deck file.`);
     return Sh.importDeck(JSON.parse(json));
   };
+  /* ---------- class decks: published with the app in class/ (see tools/publish-deck.js) ---------- */
+  const fetchJSON = async url => { const r = await fetch(url, { cache: 'no-cache' }); if (!r.ok) throw new Error(r.status); return r.json(); };
+  Sh.classIndex = () => fetchJSON('class/index.json').catch(() => []);
+  Sh.classLink = slug => location.href.split('#')[0] + '#/class/' + slug;
+
+  /* Adds or updates a class deck with its recordings and pictures. Review progress is kept. */
+  Sh.importClass = async function (slug) {
+    let data;
+    try { data = await fetchJSON(`class/${encodeURIComponent(slug)}/deck.json`); }
+    catch { throw new Error(navigator.onLine === false ? 'You are offline. Connect to the internet and open the link again.' : 'This class deck was not found. Ask for the link again.'); }
+    const have = new Set();
+    for (const id of Object.keys(data.media || {})) if (await App.media.get(id).catch(() => null)) have.add(id);
+    // recordings and pictures never change under the same id, so only new ones are downloaded
+    await Promise.all(Object.entries(data.media || {}).filter(([id]) => !have.has(id)).map(async ([id, m]) => {
+      const r = await fetch(`class/${encodeURIComponent(slug)}/${m.file}`);
+      if (!r.ok) return;
+      await App.media.put(new Blob([await r.arrayBuffer()], { type: m.type }), id);
+    }));
+    data.deck.source = { class: slug, published: data.published };
+    return Sh.importDeck(data.deck, {}, data.chars, data.slots);
+  };
+
+  /* Once per visit: bring class decks on this device up to date. Returns true if any changed. */
+  Sh.refreshClassDecks = async function () {
+    const mine = App.store.decks().filter(d => d.source && d.source.class);
+    if (!mine.length) return false;
+    const index = await Sh.classIndex();
+    let changed = false;
+    for (const d of mine) {
+      const e = index.find(x => x.slug === d.source.class);
+      if (e && e.published > (d.source.published || 0)) { try { await Sh.importClass(e.slug); changed = true; } catch {} }
+    }
+    return changed;
+  };
+
   Sh.importFile = async function (file) {
     const data = JSON.parse(await file.text());
     if (data.format === 'zika-deck') return Sh.importDeck(data.deck, data.media, data.chars, data.slots);

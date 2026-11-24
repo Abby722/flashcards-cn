@@ -14,8 +14,13 @@
   }
   const tx = async (mode, fn) => { const d = await db(); return new Promise((res, rej) => { const t = d.transaction('media', mode); const st = t.objectStore('media'); const out = fn(st); t.oncomplete = () => res(out && out.result); t.onerror = () => rej(t.error); }); };
 
-  M.put = async (blob, id = App.util.uid()) => { await tx('readwrite', st => st.put(blob, id)); delete urls[id]; return id; };
-  M.get = id => tx('readonly', st => st.get(id));
+  /* Stored as {type, data: ArrayBuffer}: Safari cannot store Blobs in IndexedDB in private browsing.
+     Blobs saved by earlier versions are still read as they are. */
+  M.put = async (blob, id = App.util.uid()) => {
+    const v = { type: blob.type, data: await blob.arrayBuffer() };
+    await tx('readwrite', st => st.put(v, id)); delete urls[id]; return id;
+  };
+  M.get = id => tx('readonly', st => st.get(id)).then(v => v && !(v instanceof Blob) && v.data ? new Blob([v.data], { type: v.type }) : v);
   M.remove = id => { if (urls[id]) { URL.revokeObjectURL(urls[id]); delete urls[id]; } return tx('readwrite', st => st.delete(id)); };
   M.removeMany = ids => Promise.all(ids.map(M.remove)).catch(() => {});
   M.url = async id => {
